@@ -248,33 +248,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 1.5rem;
 }
 
-.nav-mobile {
-    position: absolute;
-    top: 4rem;
-    left: 0;
-    right: 0;
-    background: white;
-    border-bottom: 1px solid var(--border);
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
 
-.nav-link-mobile {
-    display: block;
-    padding: 0.75rem 1rem;
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--foreground);
-    border-radius: var(--radius);
-    transition: background 0.2s ease;
-}
-
-.nav-link-mobile:hover {
-    background: var(--muted);
-    color: var(--primary);
-}
 
 /* ============================================
    Hero Section
