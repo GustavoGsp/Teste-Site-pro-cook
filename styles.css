@@ -373,7 +373,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-image-glow {
     position: absolute;
-    inset: -20%;
+    inset: 0;
     background: radial-gradient(circle, rgba(20, 184, 166, 0.2) 0%, transparent 70%);
     z-index: 0;
 }
@@ -1028,6 +1028,7 @@ html, body {
     overflow-x: hidden;
 }
 
-.hero {
+.hero,
+.hero-image-wrapper {
     overflow: hidden;
 }
