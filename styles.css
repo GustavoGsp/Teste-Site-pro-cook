@@ -11,8 +11,8 @@
     --gold: #f59e0b;
     --dark: #242424;
     --dark-light: #000000;
-    --cream: #ffffff;
-    --cream-dark: #ffffff;
+    --cream: #f4f4f4;
+    --cream-dark: #ededed;
     --background: #fffffff8;
     --foreground: #202020;
     --muted: #f1f5f9;
@@ -1001,6 +1001,47 @@ section {
     opacity: 0.7;
 }
 
+.footer {
+  background: #0b0b0b;
+  color: #b5b5b5;
+  padding: 3rem 1rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+.footer-summary {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #9a9a9a;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #ffffff;
+  font-size: 0.85rem;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+
 /* ============================================
    Animations
    ============================================ */
@@ -1034,10 +1075,9 @@ html, body {
 }
 
 
-/* NAV MOBILE CONTAINER */
 .nav-mobile {
     position: fixed;
-    top: 64px; /* ajusta conforme a altura do seu header */
+    top: 64px; 
     left: 0;
     width: 100%;
     background: #ffffff;
@@ -1050,24 +1090,23 @@ html, body {
     border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
-/* LINKS */
 .nav-link-mobile {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    color: #0f172a; /* escuro, elegante */
+    color: #0f172a; 
     padding: 14px 12px;
     border-radius: 10px;
     transition: background 0.2s ease, transform 0.15s ease;
 }
 
-/* HOVER / TAP */
+
 .nav-link-mobile:hover {
     background: #f1f5f9;
     transform: translateX(4px);
 }
 
-/* ESCONDER */
+
 .hidden {
     display: none;
 }
@@ -1093,3 +1132,49 @@ html, body {
         order: 2;
     }
 }
+
+
+/* .support-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+
+  background: #111;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+.support-btn:hover {
+  background: #000;
+  transform: translateY(-1px);
+} */
+
+
+.support-desktop {
+  display: inline-flex;
+}
+
+
+.support-btn:not(.support-desktop) {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .support-desktop {
+    display: none;
+  }
+
+  .support-btn:not(.support-desktop) {
+    display: inline-flex;
+  }
+}
+
+
