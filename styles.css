@@ -1032,3 +1032,64 @@ html, body {
 .hero-image-wrapper {
     overflow: hidden;
 }
+
+
+/* NAV MOBILE CONTAINER */
+.nav-mobile {
+    position: fixed;
+    top: 64px; /* ajusta conforme a altura do seu header */
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px 20px 24px;
+    z-index: 999;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* LINKS */
+.nav-link-mobile {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0f172a; /* escuro, elegante */
+    padding: 14px 12px;
+    border-radius: 10px;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+/* HOVER / TAP */
+.nav-link-mobile:hover {
+    background: #f1f5f9;
+    transform: translateX(4px);
+}
+
+/* ESCONDER */
+.hidden {
+    display: none;
+}
+
+/* MOBILE ONLY */
+@media (min-width: 768px) {
+    .nav-mobile {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .features-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features-row .features-image {
+        order: 1;
+    }
+
+    .features-row .features-list {
+        order: 2;
+    }
+}
